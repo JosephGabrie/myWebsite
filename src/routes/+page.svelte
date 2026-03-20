@@ -71,16 +71,17 @@
       <h1
         class="text-center font-sans text-6xl font-medium tracking-tight md:text-8xl"
       >
-        hi! <span class="font-medium text-amber-500">i'm shar</span>
+        Hi! <span class="font-medium text-amber-500">i'm Joseph</span>
       </h1>
 
       <p class="mt-4 text-center font-sans text-xl text-gray-500 md:text-2xl">
-        illustrator, animator, and developer
+        Fullstack and Game Developer
       </p>
 
       <!-- Icons Row -->
       <div class="mt-16 flex flex-wrap justify-center gap-8 md:gap-12">
-        <button
+        <a
+          href="#about"
           class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
         >
           <svg
@@ -101,9 +102,10 @@
           <span class="font-mono text-sm font-bold tracking-widest text-[#333]"
             >about</span
           >
-        </button>
+        </a>
 
-        <button
+        <a
+          href="#work"
           class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
         >
           <svg
@@ -123,9 +125,12 @@
           <span class="font-mono text-sm font-bold tracking-widest text-[#333]"
             >work</span
           >
-        </button>
+        </a>
 
-        <button
+        <a
+          href="https://x.com/JosephNgabrie"
+          target="_blank"
+          rel="noopener noreferrer"
           class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
         >
           <svg
@@ -143,9 +148,12 @@
           <span class="font-mono text-sm font-bold tracking-widest text-[#333]"
             >x</span
           >
-        </button>
+        </a>
 
-        <button
+        <a
+          href="https://github.com/JosephGabrie"
+          target="_blank"
+          rel="noopener noreferrer"
           class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
         >
           <svg
@@ -164,9 +172,12 @@
           <span class="font-mono text-sm font-bold tracking-widest text-[#333]"
             >github</span
           >
-        </button>
+        </a>
 
-        <button
+        <a
+          href="https://www.youtube.com/@JosephNGabrie"
+          target="_blank"
+          rel="noopener noreferrer"
           class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
         >
           <svg
@@ -187,14 +198,71 @@
           <span class="font-mono text-sm font-bold tracking-widest text-[#333]"
             >youtube</span
           >
-        </button>
+        </a>
       </div>
     </div>
   </div>
 </div>
 <div
-  class="relative flex min-h-[120vh] w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-t from-black to-blue-800 py-32 text-white"
+  class="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-t from-black to-blue-800 py-20 text-white"
 >
+  <!-- Left Coral -->
+  <div
+    class="pointer-events-none absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:block opacity-60"
+  >
+    <svg
+      width="250"
+      height="200"
+      viewBox="0 0 250 200"
+      xmlns="http://www.w3.org/2000/svg"
+      class="-scale-y-100"
+    >
+      <path
+        d="M0,20 Q70,10 130,20 T200,40 T230,60 Q180,50 110,40 T0,60"
+        fill="#fb7185"
+        opacity="0.8"
+      />
+      <path
+        d="M0,60 Q30,80 90,100 T180,130 T220,160 Q150,140 80,110 T0,120"
+        fill="#f43f5e"
+        opacity="0.7"
+      />
+      <path
+        d="M0,120 Q40,140 80,170 T150,230 T180,250 Q120,200 60,170 T0,180"
+        fill="#fb923c"
+        opacity="0.6"
+      />
+    </svg>
+  </div>
+  <!-- Right Coral -->
+  <div
+    class="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:block opacity-60"
+  >
+    <svg
+      width="250"
+      height="200"
+      viewBox="0 0 250 200"
+      xmlns="http://www.w3.org/2000/svg"
+      class="-scale-y-100"
+    >
+      <path
+        d="M250,20 Q180,10 120,20 T50,40 T20,60 Q70,50 140,40 T250,60"
+        fill="#ec4899"
+        opacity="0.8"
+      />
+      <path
+        d="M250,60 Q220,80 160,100 T70,130 T30,160 Q100,140 170,110 T250,120"
+        fill="#d946ef"
+        opacity="0.7"
+      />
+      <path
+        d="M250,120 Q210,140 170,170 T100,230 T70,250 Q130,200 190,170 T250,180"
+        fill="#8b5cf6"
+        opacity="0.6"
+      />
+    </svg>
+  </div>
+
   <div
     class="relative z-30 flex w-[85vw] max-w-4xl flex-col overflow-hidden rounded-xl bg-[#15202B] text-slate-100 shadow-2xl ring-1 ring-white/10 md:w-[70vw]"
   >
@@ -202,10 +270,9 @@
     <div
       class="flex h-10 w-full shrink-0 items-center justify-between border-b border-white/5 bg-[#1e293b] px-4 font-mono text-sm text-slate-300 shadow-sm"
     >
-      <span>about</span>
-      <button class="cursor-pointer transition-colors hover:text-white"
-        >[x]</button
-      >
+      <section id="about">
+        <span>about</span>
+      </section>
     </div>
 
     <div class="flex max-h-[80vh] flex-col overflow-y-auto p-8 md:p-12">
@@ -222,24 +289,25 @@
           <h2
             class="font-sans text-4xl font-medium tracking-tight text-cyan-200 md:text-5xl"
           >
-            Sharlene Yap <span
+            Joseph Gabrie <span
               class="font-sans text-2xl font-light tracking-normal opacity-80 text-cyan-200/80"
-              >葉千林</span
-            >
+            ></span>
           </h2>
           <p class="mt-2 text-slate-300">
-            PH-based freelance illustrator, animator<br />
+            Full stack develop using AI to make apps into reality<br />
             Former web developer at
-            <a href="/" class="text-cyan-200 hover:underline">MedGrocer</a>
+            <a
+              href="https://apex-software.dev/"
+              class="text-cyan-200 hover:underline">Apex software</a
+            >
           </p>
         </div>
       </div>
-
       <!-- Body -->
       <div
         class="mt-10 max-w-3xl font-sans text-lg leading-relaxed text-slate-300"
       >
-        <p>hi! i'm shar, an animator and web developer. i...</p>
+        <p>Hi! i'm Joseph, a game and web developer. i...</p>
         <ul class="mt-4 list-disc space-y-2 pl-6 marker:text-slate-500">
           <li>
             create <a href="/" class="text-cyan-200 hover:underline"
@@ -255,9 +323,10 @@
         </ul>
         <p class="mt-8 font-medium">
           interested in working with me? send me an email at <a
-            href="mailto:hi@sharyap.com"
-            class="text-cyan-200 hover:underline">hi@sharyap.com</a
-          > ! :)
+            href="mailto:josephgabriemolina@gmail.com"
+            class="text-cyan-200 hover:underline"
+            >josephgabriemolina@gmail.com</a
+          >
         </p>
       </div>
 
@@ -273,22 +342,20 @@
         <p class="font-sans text-lg leading-relaxed text-slate-200">
           i have native fluency in <span class="text-cyan-200">English</span>
           and
-          <span class="text-cyan-200">Filipino (Tagalog)</span>, and can speak
-          in conversational <span class="text-cyan-200">Chinese/中文</span>.
+          <span class="text-cyan-200">Spanish</span>
         </p>
         <p class="font-sans text-sm leading-relaxed text-slate-400">
-          i speak a little bit of Japanese and Korean, but at a very pre-school
+          i speak a little bit of Japanese and russian, but at a very pre-school
           proficiency!
         </p>
       </div>
     </div>
   </div>
 </div>
-<div
-  class="relative flex min-h-[150vh] w-full flex-col items-center justify-center overflow-hidden bg-black py-40"
->
+
+<div class="relative w-full z-20" style="height: 0;">
   <div
-    class="fish-container absolute top-10 flex h-64 w-64 items-center justify-center rounded-full bg-transparent text-white"
+    class="fish-container absolute -top-32 left-0 flex h-64 w-64 items-center justify-center rounded-full bg-transparent text-white"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -323,6 +390,99 @@
       <circle cx="22" cy="5" r="2" fill="currentColor" stroke="none" />
     </svg>
   </div>
+</div>
+
+<div
+  class="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-black py-20"
+>
+  <!-- Left Plankton -->
+  <div
+    class="pointer-events-none absolute inset-y-0 left-0 z-10 hidden md:flex items-center"
+  >
+    <svg
+      width="150"
+      height="600"
+      viewBox="0 0 150 600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="40" cy="100" r="3" fill="#ffffff" opacity="0.4"
+        ><animate
+          attributeName="opacity"
+          values="0.1;0.6;0.1"
+          dur="4s"
+          repeatCount="indefinite"
+        /></circle
+      >
+      <circle cx="110" cy="250" r="2" fill="#ffffff" opacity="0.6"
+        ><animate
+          attributeName="opacity"
+          values="0.2;0.8;0.2"
+          dur="5.5s"
+          repeatCount="indefinite"
+        /></circle
+      >
+      <circle cx="30" cy="400" r="4" fill="#ffffff" opacity="0.3"
+        ><animate
+          attributeName="opacity"
+          values="0.1;0.5;0.1"
+          dur="7s"
+          repeatCount="indefinite"
+        /></circle
+      >
+      <circle cx="80" cy="520" r="2" fill="#ffffff" opacity="0.5"
+        ><animate
+          attributeName="opacity"
+          values="0.2;0.7;0.2"
+          dur="3.5s"
+          repeatCount="indefinite"
+        /></circle
+      >
+    </svg>
+  </div>
+  <!-- Right Plankton -->
+  <div
+    class="pointer-events-none absolute inset-y-0 right-0 z-10 hidden md:flex items-center"
+  >
+    <svg
+      width="150"
+      height="600"
+      viewBox="0 0 150 600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="110" cy="120" r="2" fill="#ffffff" opacity="0.5"
+        ><animate
+          attributeName="opacity"
+          values="0.2;0.7;0.2"
+          dur="4.5s"
+          repeatCount="indefinite"
+        /></circle
+      >
+      <circle cx="50" cy="280" r="3" fill="#ffffff" opacity="0.4"
+        ><animate
+          attributeName="opacity"
+          values="0.1;0.6;0.1"
+          dur="6s"
+          repeatCount="indefinite"
+        /></circle
+      >
+      <circle cx="120" cy="450" r="4" fill="#ffffff" opacity="0.3"
+        ><animate
+          attributeName="opacity"
+          values="0.2;0.5;0.2"
+          dur="5s"
+          repeatCount="indefinite"
+        /></circle
+      >
+      <circle cx="70" cy="550" r="2" fill="#ffffff" opacity="0.6"
+        ><animate
+          attributeName="opacity"
+          values="0.3;0.8;0.3"
+          dur="4s"
+          repeatCount="indefinite"
+        /></circle
+      >
+    </svg>
+  </div>
 
   <div
     class="relative z-30 flex w-[85vw] max-w-4xl flex-col overflow-hidden rounded-xl bg-[#15202B] text-slate-100 shadow-2xl ring-1 ring-white/10 md:w-[70vw]"
@@ -331,10 +491,9 @@
     <div
       class="flex h-10 w-full shrink-0 items-center justify-between border-b border-white/5 bg-[#1e293b] px-4 font-mono text-sm text-slate-300 shadow-sm"
     >
-      <span>work</span>
-      <button class="cursor-pointer transition-colors hover:text-white"
-        >[x]</button
-      >
+      <section id="work">
+        <span>work</span>
+      </section>
     </div>
 
     <div class="flex max-h-[80vh] flex-col overflow-y-auto p-8 md:p-12">
@@ -342,12 +501,11 @@
       <div class="mb-10 rounded-lg bg-cyan-500/10 p-6 ring-1 ring-cyan-500/20">
         <p class="font-medium text-slate-200">
           Accepting work offers via my <a
-            href="/"
+            href="mailto:josephgabriemolina@gmail.com"
             class="text-cyan-200 hover:underline">work email</a
           >!<br />
           <span class="font-normal text-slate-400"
-            >I do illustration, animation, web design, and web/app development.
-            :)</span
+            >I do web design, and web/app/game development. :)</span
           >
         </p>
       </div>
@@ -368,39 +526,27 @@
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Adobe Animate</span
+              >Nvim</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Clip Studio Paint</span
+              >Antigravity</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Unity 2D/3D</span
+              >Godot</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Adobe Illustrator</span
+              >Gimp</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Adobe Premiere</span
-            >
-            <span
-              class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Adobe After Effects</span
+              >Procreate</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
               >Blender</span
-            >
-            <span
-              class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >OpenToonz</span
-            >
-            <span
-              class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >InDesign</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
@@ -419,11 +565,11 @@
           <div class="flex flex-wrap gap-2">
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >C#</span
+              >Go</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >C++</span
+              >Pytho</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
@@ -431,7 +577,7 @@
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Python</span
+              >C++</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
@@ -447,11 +593,15 @@
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Gatsby</span
+              >C#</span
             >
             <span
               class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
-              >Next.js</span
+              >Svelte</span
+            >
+            <span
+              class="inline-flex cursor-default items-center rounded-md border border-slate-700 bg-slate-800 px-3 py-1 font-sans text-sm font-medium text-slate-300 shadow-sm transition-colors hover:bg-slate-700"
+              >Typescript</span
             >
           </div>
         </div>
@@ -464,39 +614,110 @@
         PROJECTS
       </h3>
 
-      <div class="flex flex-col gap-6 md:flex-row md:items-start md:gap-8 pr-4">
-        <!-- Project Image -->
-        <div
-          class="relative flex aspect-video w-full shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-800 shadow-inner ring-4 ring-[#1e293b] md:w-80"
-        >
-          <!-- Add your image source below -->
-          <img src="" alt="Frog Pond" class="h-full w-full object-cover" />
+      <div class="flex flex-col gap-12 pr-4">
+        <!-- Project 1 -->
+        <div class="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+          <!-- Project Image -->
+          <div
+            class="relative flex aspect-video w-full shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-800 shadow-inner ring-4 ring-[#1e293b] md:w-80"
+          >
+            <!-- Add your image source below -->
+            <img
+              src="/images/arthas.png"
+              alt="Arthas AI"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <!-- Project details -->
+          <div class="flex flex-col">
+            <h4
+              class="font-sans text-3xl font-medium tracking-tight text-cyan-200"
+            >
+              Arthas AI
+            </h4>
+            <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
+              I really love using AI, so i made an llm for research papers
+            </p>
+            <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
+              I helped create the backend especifically the AI credits and
+              feeding research paper. Free and available to download on
+              <a href="/" class="text-cyan-200 underline hover:text-cyan-100"
+                >Github</a
+              >
+            </p>
+          </div>
         </div>
 
-        <!-- Project details -->
-        <div class="flex flex-col">
-          <h4
-            class="font-sans text-3xl font-medium tracking-tight text-cyan-200"
+        <!-- Project 2 -->
+        <div class="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+          <!-- Project Image -->
+          <div
+            class="relative flex aspect-video w-full shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-800 shadow-inner ring-4 ring-[#1e293b] md:w-80"
           >
-            Frog Pond
-          </h4>
-          <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
-            i really love virtual pets and desktop buddies, so i made this idle
-            desktop pond full of my little frog characters :)
-          </p>
-          <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
-            all programming/art work done on this one is by me! free and
-            available to download on
-            <a href="/" class="text-cyan-200 underline hover:text-cyan-100"
-              >itch.io</a
-            >, and soon to be released on Steam.
-          </p>
-          <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
-            see how i made it <a
-              href="/"
-              class="text-cyan-200 underline hover:text-cyan-100">here</a
-            >!
-          </p>
+            <!-- Add your image source below -->
+            <img
+              src="/images/MTV.png"
+              alt="School portal"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <!-- Project details -->
+          <div class="flex flex-col">
+            <h4
+              class="font-sans text-3xl font-medium tracking-tight text-cyan-200"
+            >
+              School Portal
+            </h4>
+            <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
+              I was contracted to create a school portal for a client.
+            </p>
+            <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
+              I created and architected the entire system using svelte and
+              convex . Check at <a
+                href="/"
+                class="text-cyan-200 underline hover:text-cyan-100"
+                >github.com</a
+              > for more information
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="flex flex-col gap-6 md:flex-row md:items-start md:gap-8">
+          <!-- Project Image -->
+          <div
+            class="relative flex aspect-video w-full shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-800 shadow-inner ring-4 ring-[#1e293b] md:w-80"
+          >
+            <!-- Add your image source below -->
+            <img
+              src="/images/dialysisApp.png"
+              alt="DialysisApp"
+              class="h-full w-full object-cover"
+            />
+          </div>
+
+          <!-- Project details -->
+          <div class="flex flex-col">
+            <h4
+              class="font-sans text-3xl font-medium tracking-tight text-cyan-200"
+            >
+              DialysisApp
+            </h4>
+            <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
+              I was contracted to create a dialysis app and website for a
+              client.
+            </p>
+            <p class="mt-4 font-sans text-base leading-relaxed text-slate-300">
+              I developed an App and a website for my client using React Native,
+              svelte and convex. Check the demo at <a
+                href="/"
+                class="text-cyan-200 underline hover:text-cyan-100"
+                >github.com</a
+              > for more information
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -574,9 +795,13 @@
 </div>
 
 <style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   @keyframes fish-move {
     0% {
-      transform: translateX(-200px);
+      transform: translateX(-1000px);
     }
     80% {
       transform: translateX(100vw);
