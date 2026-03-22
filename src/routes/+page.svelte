@@ -51,7 +51,6 @@
         />
       </svg>
     </div>
-    bye
   </div>
 
   <div
@@ -692,7 +691,7 @@
           >
             <!-- Add your image source below -->
             <img
-              src="/images/dialysisApp.png"
+              src="../lib/assets/icon.png"
               alt="DialysisApp"
               class="h-full w-full object-cover"
             />
