@@ -5,9 +5,14 @@
   const c2 = spring({ x: -100, y: -100 }, { stiffness: 0.03, damping: 0.4 });
   const c3 = spring({ x: -100, y: -100 }, { stiffness: 0.07, damping: 0.5 });
 
-  let a1 = 0;
-  let a2 = 0;
-  let a3 = 0;
+  import arthasImg from "$lib/assets/ArthasAI.png";
+  import mtvImg from "$lib/assets/MTVSchools.png";
+  import dialysisImg from "$lib/assets/dialysis.png";
+  import meImg from "$lib/assets/me.jpeg";
+
+  let a1 = $state(0);
+  let a2 = $state(0);
+  let a3 = $state(0);
 
   let fishWrapper: HTMLElement;
 
@@ -281,7 +286,11 @@
         <div
           class="flex h-28 w-28 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-slate-700 bg-teal-900 shadow-inner md:h-32 md:w-32"
         >
-          <span class="font-mono text-xs text-teal-200/50">(profile)</span>
+          <img
+            src={meImg}
+            alt="Joseph Gabrie"
+            class="h-full w-full object-cover"
+          />
         </div>
         <!-- Title & Subtitle -->
         <div class="flex flex-col">
@@ -622,7 +631,7 @@
           >
             <!-- Add your image source below -->
             <img
-              src="/images/arthas.png"
+              src={arthasImg}
               alt="Arthas AI"
               class="h-full w-full object-cover"
             />
@@ -656,7 +665,7 @@
           >
             <!-- Add your image source below -->
             <img
-              src="/images/MTV.png"
+              src={mtvImg}
               alt="School portal"
               class="h-full w-full object-cover"
             />
@@ -691,7 +700,7 @@
           >
             <!-- Add your image source below -->
             <img
-              src="../lib/assets/icon.png"
+              src={dialysisImg}
               alt="DialysisApp"
               class="h-full w-full object-cover"
             />
