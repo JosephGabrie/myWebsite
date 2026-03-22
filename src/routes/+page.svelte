@@ -319,12 +319,12 @@
         <ul class="mt-4 list-disc space-y-2 pl-6 marker:text-slate-500">
           <li>
             create <a href="/" class="text-cyan-200 hover:underline"
-              >hand-drawn animations</a
+              >Video Games</a
             >,
           </li>
           <li>
             create <a href="/" class="text-cyan-200 hover:underline">videos</a> talking
-            about things i like,
+            software,
           </li>
           <li>create website wireframes, and</li>
           <li>do frontend web development!</li>
